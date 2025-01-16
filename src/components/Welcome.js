@@ -17,7 +17,7 @@ const Welcome = () => {
   };
   return (
     <div className='welcome-container'>
-      <img className='background' src="/image/welcome.jpg" alt="Welcome" />
+     <img className='background' src="/public/image/welcome.jpg" alt="Welcome" />
       <div className='welcome-text'>
      <h3>HI <span > , </span>I AM </h3><br/><h2>POOJA <br/>LOHARE</h2>
      <p className='par-text'>SOFTWARE ENGINEER AND FRONTEND DEVELOPER </p>
