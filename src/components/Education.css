@@ -1,0 +1,86 @@
+/* Education Section */
+.education-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Timeline Container */
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between;
+  position: relative;
+  padding-top: 20px;
+  gap: 20px; /* Add space between boxes */
+}
+
+/* Education Item */
+.education-item {
+  flex: 1 1 calc(33.33% - 20px); /* Take 1/3 of the row with space included */
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Add additional space between boxes */
+}
+
+.education-item:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.education-item.active {
+  border-color: #3498db;
+  background-color: #f0f8ff;
+}
+
+/* Title */
+.education-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #1F2937;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 40px;
+}
+
+/* Content */
+.education-content {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+/* Description */
+.edudescription {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 10px;
+  max-height: 0; /* Hide by collapsing height */
+  opacity: 0; /* Invisible by default */
+  overflow: hidden; /* Prevent content from spilling out */
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.education-item:hover .edudescription {
+  max-height: 200px; /* Adjust to the content's height */
+  opacity: 1; /* Make visible */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-container {
+    flex-direction: column; /* Stack boxes vertically on smaller screens */
+    gap: 20px; /* Maintain space between boxes */
+  }
+
+  .education-item {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+  }
+}
