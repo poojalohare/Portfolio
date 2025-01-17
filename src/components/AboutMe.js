@@ -2,7 +2,7 @@ import { FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { TiSocialPinterestCircular } from "react-icons/ti";
-
+import profileImage from "../assets/images/profile.jpg";
 import "./AboutMe.css";
 import React, { useState, useEffect } from "react";
 
@@ -53,11 +53,9 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="image-section">
-          <img
-            src="/image/profile.jpg"
-            alt="Profile"
-            className="profile-image"
-          />
+      
+      
+        <img src={profileImage} alt="Profile" className="profile-image" />
           <div className="social-icons">
             <CiLinkedin className="icon" />
             <FaInstagram className="icon" />

@@ -169,3 +169,38 @@ textarea {
   margin-top: 20px; /* Space above the text */
   font-size: 1rem;
 }
+
+
+
+
+
+.social-contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s ease 1.5s forwards;
+}
+
+.icon-contact {
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.icon-contact:hover {
+  transform: translateY(-5px) scale(1.1);
+  background: rgba(182, 54, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(182, 54, 255, 0.3);
+}

@@ -1,4 +1,4 @@
-
+import './Welcome.css';
 
 import React from 'react';
 
@@ -17,7 +17,15 @@ const Welcome = () => {
   };
   return (
     <div className='welcome-container'>
-      <img className='background' src="/image/welcome.jpg" alt="Welcome" />
+         <img 
+        className='background' 
+        src={process.env.PUBLIC_URL + '/image/welcome.jpg'} 
+        alt="Welcome"
+        onError={(e) => {
+          console.error('Image failed to load');
+          e.target.style.display = 'none';
+        }} 
+      />
       <div className='welcome-text'>
      <h3>HI <span > , </span>I AM </h3><br/><h2>POOJA <br/>LOHARE</h2>
      <p className='par-text'>SOFTWARE ENGINEER AND FRONTEND DEVELOPER </p>
