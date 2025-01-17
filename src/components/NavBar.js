@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './NavBar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup listener
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

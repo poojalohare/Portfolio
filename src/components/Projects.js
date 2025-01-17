@@ -16,7 +16,7 @@ const Projects = () => {
         "DRUPAL",
         "NODEJS",
       ],
-      // link: "https://myportfolio.com",
+     
     },
     {
       name: "Telefonica - Cognizant | E-commerce Platform ",
@@ -32,7 +32,7 @@ const Projects = () => {
         "Bootstrap",
         "JENKINS",
       ],
-      // link: "https://myportfolio.com",
+      
     },
   ];
 
@@ -47,14 +47,7 @@ const Projects = () => {
             <p className="project-technologies">
               <strong>Technologies:</strong> {project.technologies.join(", ")}
             </p>
-            {/* <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              View Project
-            </a> */}
+           
           </div>
         ))}
       </div>

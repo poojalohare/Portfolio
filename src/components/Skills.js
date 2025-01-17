@@ -13,7 +13,7 @@ const Skills = () => {
     { name: "NodeJS", percentage: 60 },
   ];
 
-  // Function to calculate stars based on percentage
+  
   const renderStars = (percentage) => {
     const totalStars = 5;
     const filledStars = Math.round((percentage / 100) * totalStars);
@@ -27,14 +27,14 @@ const Skills = () => {
     );
   };
 
-  // Function to chunk array into groups of 3
+ 
   const chunkArray = (arr, size) => {
     return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
       arr.slice(i * size, i * size + size)
     );
   };
 
-  // Split skills into rows of 3
+
   const skillRows = chunkArray(skillsData, 3);
 
   return (
